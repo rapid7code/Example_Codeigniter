@@ -83,11 +83,11 @@ CREATE TABLE `ci_session` (
 	
 )
 
-`COLLATE='latin1_swedish_ci'
+COLLATE='latin1_swedish_ci'
 
-`ENGINE=InnoDB
+ENGINE=InnoDB
 
-`;
+;
 
 
 * Index.php
