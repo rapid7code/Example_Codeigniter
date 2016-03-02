@@ -1,6 +1,7 @@
 # Example_Codeigniter
 Step 1: Setup database for site
 - Go to application/config/database.php
+
 $db['default'] = array(
 	'dsn'	=> '',
 	'hostname' => 'localhost',
@@ -23,18 +24,19 @@ $db['default'] = array(
 	'save_queries' => TRUE
 );
 
-Step 2: Go to application/config/config.php
+Step 2: 
+- Go to application/config/config.php
 -- Create ci_session Table
-$config['sess_driver'] = 'database';
-$config['sess_cookie_name'] = 'ci_session';
-$config['sess_expiration'] = 7200;
-$config['sess_save_path'] = 'ci_session';
-$config['sess_match_ip'] = FALSE;
-$config['sess_time_to_update'] = 300;
-$config['sess_regenerate_destroy'] = FALSE;
+* $config['sess_driver'] = 'database';
+* $config['sess_cookie_name'] = 'ci_session';
+* $config['sess_expiration'] = 7200;
+* $config['sess_save_path'] = 'ci_session';
+* $config['sess_match_ip'] = FALSE;
+* $config['sess_time_to_update'] = 300;
+* $config['sess_regenerate_destroy'] = FALSE;
 
 -- SQL
-CREATE TABLE `ci_session` (
+* CREATE TABLE `ci_session` (
 	`id` VARCHAR(40) NOT NULL,
 	`ip_address` VARCHAR(45) NOT NULL,
 	`timestamp` INT(10) UNSIGNED NOT NULL DEFAULT '0',
