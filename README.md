@@ -25,8 +25,8 @@ $db['default'] = array(
 );
 
 Step 2: 
-- Go to application/config/config.php
--- Create ci_session Table
+## Go to application/config/config.php
+## Create ci_session Table
 * $config['sess_driver'] = 'database';
 * $config['sess_cookie_name'] = 'ci_session';
 * $config['sess_expiration'] = 7200;
@@ -35,7 +35,7 @@ Step 2:
 * $config['sess_time_to_update'] = 300;
 * $config['sess_regenerate_destroy'] = FALSE;
 
--- SQL
+## SQL
 * CREATE TABLE `ci_session` (
 	`id` VARCHAR(40) NOT NULL,
 	`ip_address` VARCHAR(45) NOT NULL,
@@ -48,7 +48,7 @@ COLLATE='latin1_swedish_ci'
 ENGINE=InnoDB
 ;
 
--- Index.php
+## Index.php
 Edit here for debug or disable debug
 -> Turn on
 case 'development':
